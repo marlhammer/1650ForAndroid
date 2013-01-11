@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Book"
+            android:id="@+id/choosebooklabel"
+            android:layout_alignLeft="@+id/choosepsalmlabel"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_above="@+id/choosepsalmlabel"
+            android:layout_alignRight="@+id/choosepsalmlabel"/>
+    <Spinner
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/choosebook"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/choosepsalm"
+            android:layout_alignTop="@id/choosebooklabel"
+            android:layout_alignLeft="@+id/choosepsalm"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Psalm"
+            android:id="@+id/choosepsalmlabel"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_alignTop="@+id/choosepsalm"
+            android:layout_alignBottom="@+id/choosepsalm"
+            android:layout_toLeftOf="@+id/choosebook"/>
+    <Spinner
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/choosepsalm"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="71dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="116dp"
+            android:layout_alignParentRight="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:id="@+id/select"
+            android:layout_alignRight="@+id/choosebook"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/choosebooklabel"/>
+</RelativeLayout>
