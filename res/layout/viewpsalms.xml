@@ -17,7 +17,6 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:spinnerMode="dropdown"
-            android:prompt="Choose Book"
             />
     <Spinner
             android:layout_width="wrap_content"
@@ -28,7 +27,6 @@
             android:layout_below="@+id/choosebook"
             android:layout_marginBottom="10dp"
             android:spinnerMode="dropdown"
-            android:prompt="Choose Psalm"
             />
     <Button
             android:layout_width="wrap_content"
