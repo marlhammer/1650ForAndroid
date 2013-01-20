@@ -2,6 +2,9 @@ package com.smouring.android.psalterapp;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
+import android.widget.TextView;
 
 /**
  * @author Stephen Mouring
@@ -10,25 +13,15 @@ public class ViewPsalm extends Activity {
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-	setContentView(R.layout.viewpsalm);
+    setContentView(R.layout.viewpsalm);
 
-/*
-int selectedBook  = Integer.parseInt(getIntent().getStringExtra("selectedBook"));
-int selectedPsalm = Integer.parseInt(getIntent().getStringExtra("selectedPsalm"));
+    int selectedBook = Integer.parseInt(getIntent().getStringExtra("selectedBook"));
+    int selectedPsalm = Integer.parseInt(getIntent().getStringExtra("selectedPsalm"));
 
-TextView psalmDisplay = (TextView)findViewById(R.id.psalmdisplay);
+    TextView psalmText = (TextView) findViewById(R.id.psalmtext);
 
-String[] psalmVerses = psalms[selectedPsalm - 1];
+    psalmText.setText(Html.fromHtml("<b>Book" + selectedBook + "</b><br /><br /><i>" + selectedPsalm + "</b>"));
 
-StringBuilder psalmText = new StringBuilder();
-for (int i = 0; i < psalmVerses.length; ++i) {
-	psalmText.append(psalmVerses[i]);
-}
-
-psalmDisplay.setText(Html.fromHtml(psalmText.toString()));
-
-psalmDisplay.setMovementMethod(new ScrollingMovementMethod());
-*/
-
+    psalmText.setMovementMethod(new ScrollingMovementMethod());
   }
 }

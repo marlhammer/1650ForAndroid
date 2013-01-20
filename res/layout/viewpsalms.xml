@@ -16,7 +16,6 @@
             android:layout_marginRight="12dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:spinnerMode="dropdown"
             />
     <Spinner
             android:layout_width="wrap_content"
@@ -26,7 +25,6 @@
             android:layout_alignRight="@+id/choosebook"
             android:layout_below="@+id/choosebook"
             android:layout_marginBottom="10dp"
-            android:spinnerMode="dropdown"
             />
     <Button
             android:layout_width="wrap_content"
