@@ -20,7 +20,13 @@ public class ViewPsalm extends Activity {
 
     TextView psalmText = (TextView) findViewById(R.id.psalmtext);
 
-    psalmText.setText(Html.fromHtml("<b>Book" + selectedBook + "</b><br /><br /><i>" + selectedPsalm + "</b>"));
+    // TODO: Temporary solution until Lucene is working.
+    StringBuilder psalmString = new StringBuilder();
+    for (String psalmLine : Constants.PSALMS[selectedPsalm]) {
+      psalmString.append(psalmLine);
+    }
+
+    psalmText.setText(Html.fromHtml(psalmString.toString()));
 
     psalmText.setMovementMethod(new ScrollingMovementMethod());
   }
