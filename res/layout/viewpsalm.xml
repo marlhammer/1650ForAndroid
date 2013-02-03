@@ -12,21 +12,33 @@
             android:id="@+id/psalmtextscrollview"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginRight="8dp"
-            >
+            android:layout_above="@+id/back">
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Test"
+                android:text=""
                 android:id="@+id/psalmtext"
                 android:textSize="15dp"
                 />
     </ScrollView>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/back"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
 
 </RelativeLayout>
