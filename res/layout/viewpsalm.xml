@@ -14,8 +14,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
             android:layout_above="@+id/back">
 
         <TextView
@@ -23,8 +23,8 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:id="@+id/psalmtext"
-                android:textSize="15dp"
-                />
+                android:textSize="18dp"
+                android:textColor="#FFFFFF"/>
     </ScrollView>
 
     <Button
