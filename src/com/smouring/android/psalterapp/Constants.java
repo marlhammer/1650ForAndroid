@@ -215,7 +215,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (L.M.)<br/>" +
+              "<b>FIRST VERSION (L.M.)</b><br/>" +
                   "<b>1</b> Lord, in thy wrath rebuke me not;<br/>" +
                   "Nor in thy hot rage chasten me.<br/>" +
                   "",
@@ -248,8 +248,8 @@ public class Constants {
                   "My pray'r received graciously.<br/>" +
                   "",
               "<b>10</b> Sham'd and sore vex'd be all my foes,<br/>" +
-                  "Sham'd and back turned suddenly.<br/>" +
-                  "SECOND VERSION (C.M.)<br/>" +
+                  "Sham'd and back turned suddenly.<br/><br/><br/>" +
+              "<b>SECOND VERSION (C.M.)</b><br/>" +
                   "<b>1</b> In thy great indignation,<br/>" +
                   "O Lord, rebuke me not;<br/>" +
                   "Nor on me lay thy chast'ning hand,<br/>" +
@@ -1490,7 +1490,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (S.M.)<br/>" +
+              "<b>FIRST VERSION (S.M.)</b><br/>" +
                   "<b>1</b> To thee I lift my soul:<br/>" +
                   "",
               "<b>2</b> O Lord, I trust in thee:<br/>" +
@@ -1583,8 +1583,8 @@ public class Constants {
                   "keep me, who thee attend.<br/>" +
                   "",
               "<b>22</b> Redemption, Lord, to Israel<br/>" +
-                  "from all his troubles send.<br/>" +
-                  "SECOND VERSION (C.M.)<br/>" +
+                  "from all his troubles send.<br/><br/><br/>" +
+              "<b>SECOND VERSION (C.M.)</b><br/>" +
                   "<b>1</b> To thee I lift my soul, O Lord:<br/>" +
                   "",
               "<b>2</b> My God, I trust in thee:<br/>" +
@@ -3199,7 +3199,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (C.M.)<br/>" +
+              "<b>FIRST VERSION (C.M.)</b><br/>" +
                   "<b>1</b> My heart brings forth a goodly thing;<br/>" +
                   "my words that I indite<br/>" +
                   "Concern the King: my tongue's a pen<br/>" +
@@ -3283,8 +3283,8 @@ public class Constants {
               "<b>17</b> Thy name remember'd I will make<br/>" +
                   "through ages all to be:<br/>" +
                   "The people therefore evermore<br/>" +
-                  "shall praises give to thee.<br/>" +
-                  "SECOND VERSION (S.M.)<br/>" +
+                  "shall praises give to thee.<br/><br/><br/>" +
+              "<b>SECOND VERSION (S.M.)</b><br/>" +
                   "<b>1</b> My heart inditing is<br/>" +
                   "good matter in a song:<br/>" +
                   "I speak the things that I have made,<br/>" +
@@ -3614,7 +3614,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (S.M.)<br/>" +
+              "<b>FIRST VERSION (S.M.)</b><br/>" +
                   "<b>1</b> The mighty God, the Lord,<br/>" +
                   "hath spoken, and did call<br/>" +
                   "The earth, from rising of the sun,<br/>" +
@@ -3720,8 +3720,8 @@ public class Constants {
               "<b>23</b> Whoso doth offer praise<br/>" +
                   "me glorifies; and I<br/>" +
                   "Will shew him God's salvation,<br/>" +
-                  "that orders right his way.<br/>" +
-                  "SECOND VERSION (C.M.)<br/>" +
+                  "that orders right his way.<br/><br/><br/>" +
+              "<b>SECOND VERSION (C.M.)</b><br/>" +
                   "<b>1</b> The mighty God, the Lord, hath spoke,<br/>" +
                   "and call'd the earth upon,<br/>" +
                   "Ev'n from the rising of the sun<br/>" +
@@ -4777,7 +4777,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (S.M.)<br/>" +
+              "<b>FIRST VERSION (S.M.)</b><br/>" +
                   "<b>1</b> Lord, bless and pity us,<br/>" +
                   "shine on us with thy face:<br/>" +
                   "",
@@ -4799,8 +4799,8 @@ public class Constants {
                   "our God shall blessing send.<br/>" +
                   "",
               "<b>7</b> God shall us bless; men shall him fear<br/>" +
-                  "unto earth's utmost end.<br/>" +
-                  "SECOND VERSION (C.M.)<br/>" +
+                  "unto earth's utmost end.<br/><br/><br/>" +
+              "<b>SECOND VERSION (C.M.)</b><br/>" +
                   "<b>1</b> Lord, unto us be merciful,<br/>" +
                   "do thou us also bless;<br/>" +
                   "And graciously cause shine on us<br/>" +
@@ -5177,7 +5177,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (S.M.)<br/>" +
+              "<b>FIRST VERSION (S.M.)</b><br/>" +
                   "<b>1</b> Lord, haste me to deliver;<br/>" +
                   "with speed, Lord, succour me.<br/>" +
                   "",
@@ -5197,8 +5197,8 @@ public class Constants {
               "<b>5</b> I poor and needy am;<br/>" +
                   "come, Lord, and make no stay:<br/>" +
                   "My help thou and deliv'rer art;<br/>" +
-                  "O Lord, make no delay.<br/>" +
-                  "SECOND VERSION (C.M.)<br/>" +
+                  "O Lord, make no delay.<br/><br/><br/>" +
+              "<b>SECOND VERSION (C.M.)</b><br/>" +
                   "<b>1</b> Make haste, O God, me to preserve;<br/>" +
                   "with speed, Lord, succour me.<br/>" +
                   "",
@@ -7659,7 +7659,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (L.M.)<br/>" +
+              "<b>FIRST VERSION (L.M.)</b><br/>" +
                   "<b>1</b> All people that on earth do dwell,<br/>" +
                   "Sing to the Lord with cheerful voice.<br/>" +
                   "",
@@ -7679,8 +7679,8 @@ public class Constants {
               "<b>5</b> For why? the Lord our God is good,<br/>" +
                   "His mercy is for ever sure;<br/>" +
                   "His truth at all times firmly stood,<br/>" +
-                  "And shall from age to age endure.<br/>" +
-                  "SECOND VERSION (C.M.)<br/>" +
+                  "And shall from age to age endure.<br/><br/><br/>" +
+              "<b>SECOND VERSION (C.M.)</b><br/>" +
                   "<b>1</b> O all ye lands, unto the Lord<br/>" +
                   "make ye a joyful noise.<br/>" +
                   "",
@@ -7746,7 +7746,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (C.M.)<br/>" +
+              "<b>FIRST VERSION (C.M.)</b><br/>" +
                   "<b>1</b> O Lord, unto my pray'r give ear,<br/>" +
                   "my cry let come to thee;<br/>" +
                   "",
@@ -7877,8 +7877,8 @@ public class Constants {
               "<b>28</b> The children of thy servants shall<br/>" +
                   "continually endure;<br/>" +
                   "And in thy sight, O Lord, their seed<br/>" +
-                  "shall be establish'd sure.<br/>" +
-                  "SECOND VERSION (L.M.)<br/>" +
+                  "shall be establish'd sure.<br/><br/><br/>" +
+              "<b>SECOND VERSION (L.M.)</b><br/>" +
                   "<b>1</b> Lord, hear my pray'r, and let my cry<br/>" +
                   "Have speedy access unto thee;<br/>" +
                   "",
@@ -10302,7 +10302,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (C.M.)<br/>" +
+              "<b>FIRST VERSION (C.M.)</b><br/>" +
                   "<b>1</b> Had not the Lord been on our side,<br/>" +
                   "may Israel now say;<br/>" +
                   "",
@@ -10329,8 +10329,8 @@ public class Constants {
               "<b>8</b> Our sure and all-sufficient help<br/>" +
                   "is in JEHOVAH's name;<br/>" +
                   "His name who did the heav'n create,<br/>" +
-                  "and who the earth did frame.<br/>" +
-                  "SECOND VERSION (10.10.10.10.10.)<br/>" +
+                  "and who the earth did frame.<br/><br/><br/>" +
+              "<b>SECOND VERSION (10.10.10.10.10.)</b><br/>" +
                   "<b>1</b> Now Israel<br/>" +
                   "may say, and that truly,<br/>" +
                   "If that the Lord<br/>" +
@@ -10745,7 +10745,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (8.7.8.7.)<br/>" +
+              "<b>FIRST VERSION (8.7.8.7.)</b><br/>" +
                   "<b>1</b> Give thanks to God, for good is he:<br/>" +
                   "for mercy hath he ever.<br/>" +
                   "",
@@ -10822,8 +10822,8 @@ public class Constants {
                   "for he hath mercy ever.<br/>" +
                   "",
               "<b>26</b> Thanks to the God of heaven give:<br/>" +
-                  "for his grace faileth never.<br/>" +
-                  "SECOND VERSION (6.6.6.6.8.8.)<br/>" +
+                  "for his grace faileth never.<br/><br/><br/>" +
+              "<b>SECOND VERSION (6.6.6.6.8.8.)</b><br/>" +
                   "<b>1</b> Praise God, for he is kind:<br/>" +
                   "His mercy lasts for aye.<br/>" +
                   "",
@@ -11315,7 +11315,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (C.M.)<br/>" +
+              "<b>FIRST VERSION (C.M.)</b><br/>" +
                   "<b>1</b> Lord, hear my pray'r, attend my suits;<br/>" +
                   "and in thy faithfulness<br/>" +
                   "Give thou an answer unto me,<br/>" +
@@ -11370,8 +11370,8 @@ public class Constants {
               "<b>12</b> And of thy mercy slay my foes;<br/>" +
                   "let all destroyed be<br/>" +
                   "That do afflict my soul: for I<br/>" +
-                  "a servant am to thee.<br/>" +
-                  "SECOND VERSION (6.6.6.6.D.)<br/>" +
+                  "a servant am to thee.<br/><br/><br/>" +
+              "<b>SECOND VERSION (6.6.6.6.D.)</b><br/>" +
                   "<b>1</b> Oh, hear my prayer, Lord,<br/>" +
                   "And unto my desire<br/>" +
                   "To bow thine ear accord,<br/>" +
@@ -11527,7 +11527,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (C.M.)<br/>" +
+              "<b>FIRST VERSION (C.M.)</b><br/>" +
                   "<b>1</b> I'll thee extol, my God, O King;<br/>" +
                   "I'll bless thy name always.<br/>" +
                   "",
@@ -11611,8 +11611,8 @@ public class Constants {
               "<b>21</b> My mouth the praises of the Lord<br/>" +
                   "to publish cease shall never:<br/>" +
                   "Let all flesh bless his holy name<br/>" +
-                  "for ever and for ever.<br/>" +
-                  "SECOND VERSION (L.M.)<br/>" +
+                  "for ever and for ever.<br/><br/><br/>" +
+              "<b>SECOND VERSION (L.M.)</b><br/>" +
                   "<b>1</b> O Lord, thou art my God and King;<br/>" +
                   "Thee will I magnify and praise:<br/>" +
                   "I will thee bless, and gladly sing<br/>" +
@@ -11818,7 +11818,7 @@ public class Constants {
                   ""},
 
           new String[]{
-              "FIRST VERSION (C.M.)<br/>" +
+              "<b>FIRST VERSION (C.M.)</b><br/>" +
                   "<b>1</b> Praise God. From heavens praise the Lord,<br/>" +
                   "in heights praise to him be.<br/>" +
                   "",
@@ -11867,8 +11867,8 @@ public class Constants {
               "<b>14</b> His people's horn, the praise of all<br/>" +
                   "his saints, exalteth he;<br/>" +
                   "Ev'n Isr'el's seed, a people near<br/>" +
-                  "to him. The Lord praise ye.<br/>" +
-                  "SECOND VERSION (6.6.6.6.8.8.)<br/>" +
+                  "to him. The Lord praise ye.<br/><br/><br/>" +
+              "<b>SECOND VERSION (6.6.6.6.8.8.)</b><br/>" +
                   "<b>1</b> The Lord of heav'n confess,<br/>" +
                   "On high his glory raise.<br/>" +
                   "",
