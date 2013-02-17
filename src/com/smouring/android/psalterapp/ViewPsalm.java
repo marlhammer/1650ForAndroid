@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.smouring.android.psalterapp.Constants.*;
+
 /**
  * @author Stephen Mouring
  */
@@ -22,8 +24,10 @@ public class ViewPsalm extends Activity {
 
     setContentView(R.layout.viewpsalm);
 
-    selectedBook = Integer.parseInt(getIntent().getStringExtra("selectedBook"));
-    selectedPsalm = Integer.parseInt(getIntent().getStringExtra("selectedPsalm"));
+    selectedBook = getIntent().getIntExtra(SELECTED_BOOK_KEY, 1);
+    selectedPsalm = getIntent().getIntExtra(SELECTED_PSALM_KEY, 1);
+
+    Log.i("1650ForAndroid", String.format("Received selectedBook [%s] and selectedPsalm [%s].", String.valueOf(selectedBook), String.valueOf(selectedPsalm)));
 
     TextView psalmText = (TextView) findViewById(R.id.psalmtext);
 
@@ -40,13 +44,12 @@ public class ViewPsalm extends Activity {
     Button selectButton = (Button) findViewById(R.id.back);
     selectButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
-        Log.i("1650ForAndroid", "Launching intent for ViewPsalms activity.");
-
-        Intent i = new Intent(ViewPsalm.this, ViewPsalms.class);
-        i.putExtra("selectedBook", String.valueOf(selectedBook));
-        i.putExtra("selectedPsalm", String.valueOf(selectedPsalm));
-        startActivity(i);
+        back();
       }
     });
+  }
+
+  private void back() {
+    super.finish();
   }
 }

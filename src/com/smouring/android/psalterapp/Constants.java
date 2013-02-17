@@ -5,6 +5,9 @@ package com.smouring.android.psalterapp;
  */
 public class Constants {
 
+  public static String SELECTED_BOOK_KEY = "selectedBook";
+  public static String SELECTED_PSALM_KEY = "selectedPsalm";
+
   public static final String[][] PSALMS = new String[][]
       {
           new String[]{
@@ -138,7 +141,7 @@ public class Constants {
               "<b>4</b> Fear, and sin not; talk with your heart<br/>" +
                   "on bed, and silent be.<br/>" +
                   "",
-              "<b>5</b> Off Ôrings present of righteousness,<br/>" +
+              "<b>5</b> Off 'rings present of righteousness,<br/>" +
                   "and in the Lord trust ye.<br/>" +
                   "",
               "<b>6</b> O who will shew us any good?<br/>" +
@@ -198,7 +201,7 @@ public class Constants {
               "<b>10</b> O God, destroy them; let them be<br/>" +
                   "by their own counsel quell'd:<br/>" +
                   "Them for their many sins cast out,<br/>" +
-                  "for they Ôgainst thee rebell'd.<br/>" +
+                  "for they 'gainst thee rebell'd.<br/>" +
                   "",
               "<b>11</b> But let all joy that trust in thee,<br/>" +
                   "and still make shouting noise;<br/>" +
@@ -766,7 +769,7 @@ public class Constants {
               "<b>4</b> Their sorrows shall be multiply'd<br/>" +
                   "to other gods that haste:<br/>" +
                   "Of their drink-offerings of blood<br/>" +
-                  "I will no off Ôring make;<br/>" +
+                  "I will no off 'ring make;<br/>" +
                   "Yea, neither I their very names<br/>" +
                   "up in my lips will take.<br/>" +
                   "",
@@ -1021,7 +1024,7 @@ public class Constants {
               "<b>31</b> Who but the Lord is God? but he<br/>" +
                   "who is a rock and stay?<br/>" +
                   "",
-              "<b>32</b> ÔTis God that girdeth me with strength,<br/>" +
+              "<b>32</b> 'Tis God that girdeth me with strength,<br/>" +
                   "and perfect makes my way.<br/>" +
                   "",
               "<b>33</b> He made my feet swift as the hinds,<br/>" +
@@ -1251,7 +1254,7 @@ public class Constants {
               "<b>10</b> Their fruit from earth thou shalt destroy,<br/>" +
                   "their seed men from among:<br/>" +
                   "",
-              "<b>11</b> For they beyond their might Ôgainst thee<br/>" +
+              "<b>11</b> For they beyond their might 'gainst thee<br/>" +
                   "did plot mischief and wrong.<br/>" +
                   "",
               "<b>12</b> Thou therefore shalt make them turn back,<br/>" +
@@ -2413,7 +2416,7 @@ public class Constants {
                   "Against all those within the land<br/>" +
                   "that meek and quiet are.<br/>" +
                   "",
-              "<b>21</b> With mouths set wide, they Ôgainst me said,<br/>" +
+              "<b>21</b> With mouths set wide, they 'gainst me said,<br/>" +
                   "Ha, ha! our eye doth see.<br/>" +
                   "",
               "<b>22</b> Lord, thou hast seen, hold not thy peace;<br/>" +
@@ -2426,7 +2429,7 @@ public class Constants {
                   "",
               "<b>24</b> O Lord my God, do thou me judge<br/>" +
                   "after thy righteousness;<br/>" +
-                  "And let them not their joy Ôgainst me<br/>" +
+                  "And let them not their joy 'gainst me<br/>" +
                   "triumphantly express:<br/>" +
                   "",
               "<b>25</b> Nor let them say within their hearts,<br/>" +
@@ -2964,7 +2967,7 @@ public class Constants {
                   "when forth he doth depart.<br/>" +
                   "",
               "<b>7</b> My haters jointly whispering,<br/>" +
-                  "Ôgainst me my hurt devise.<br/>" +
+                  "'gainst me my hurt devise.<br/>" +
                   "",
               "<b>8</b> Mischief, say they, cleaves fast to him;<br/>" +
                   "he li'th, and shall not rise.<br/>" +
@@ -3045,10 +3048,10 @@ public class Constants {
                   "Why, for my foes' oppression,<br/>" +
                   "thus mourning do I go?<br/>" +
                   "",
-              "<b>10</b> ÔTis as a sword within my bones,<br/>" +
+              "<b>10</b> 'Tis as a sword within my bones,<br/>" +
                   "when my foes me upbraid;<br/>" +
                   "Ev'n when by them, Where is thy God?<br/>" +
-                  "Ôtis daily to me said.<br/>" +
+                  "'tis daily to me said.<br/>" +
                   "",
               "<b>11</b> O why art thou cast down, my soul?<br/>" +
                   "why, thus with grief opprest,<br/>" +
@@ -3135,7 +3138,7 @@ public class Constants {
                   "our spoils away do take.<br/>" +
                   "",
               "<b>11</b> Like sheep for meat thou gavest us;<br/>" +
-                  "Ômong heathen cast we be.<br/>" +
+                  "'mong heathen cast we be.<br/>" +
                   "",
               "<b>12</b> Thou didst for nought thy people sell;<br/>" +
                   "their price enrich'd not thee.<br/>" +
@@ -3697,7 +3700,7 @@ public class Constants {
               "<b>19</b> Thou giv'st thy mouth to ill,<br/>" +
                   "thy tongue deceit doth frame;<br/>" +
                   "",
-              "<b>20</b> Thou sitt'st, and Ôgainst thy brother speak'st,<br/>" +
+              "<b>20</b> Thou sitt'st, and 'gainst thy brother speak'st,<br/>" +
                   "thy mother's son dost shame.<br/>" +
                   "",
               "<b>21</b> Because I silence kept,<br/>" +
@@ -3808,7 +3811,7 @@ public class Constants {
               "<b>19</b> Thy mouth to evil thou dost give,<br/>" +
                   "thy tongue deceit doth frame.<br/>" +
                   "",
-              "<b>20</b> Thou sitt'st, and Ôgainst thy brother speak'st,<br/>" +
+              "<b>20</b> Thou sitt'st, and 'gainst thy brother speak'st,<br/>" +
                   "thy mother's son to shame.<br/>" +
                   "",
               "<b>21</b> These things thou wickedly hast done,<br/>" +
@@ -3843,7 +3846,7 @@ public class Constants {
               "<b>3</b> For my transgressions I confess;<br/>" +
                   "my sin I ever see.<br/>" +
                   "",
-              "<b>4</b> ÔGainst thee, thee only, have I sinn'd,<br/>" +
+              "<b>4</b> 'Gainst thee, thee only, have I sinn'd,<br/>" +
                   "in thy sight done this ill;<br/>" +
                   "That when thou speak'st thou may'st be just,<br/>" +
                   "and clear in judging still.<br/>" +
@@ -4019,7 +4022,7 @@ public class Constants {
                   "",
               "<b>6</b> I will a sacrifice to thee<br/>" +
                   "give with free willingness;<br/>" +
-                  "Thy name, O Lord, because Ôtis good,<br/>" +
+                  "Thy name, O Lord, because 'tis good,<br/>" +
                   "with praise I will confess.<br/>" +
                   "",
               "<b>7</b> For he hath me delivered<br/>" +
@@ -4055,7 +4058,7 @@ public class Constants {
                   "and in the desert stay;<br/>" +
                   "",
               "<b>8</b> From windy storm and tempest I<br/>" +
-                  "would haste to Ôscape away.<br/>" +
+                  "would haste to 'scape away.<br/>" +
                   "",
               "<b>9</b> O Lord, on them destruction bring,<br/>" +
                   "and do their tongues divide;<br/>" +
@@ -4074,7 +4077,7 @@ public class Constants {
                   "",
               "<b>12</b> He was no foe that me reproach'd,<br/>" +
                   "then that endure I could;<br/>" +
-                  "Nor hater that did Ôgainst me boast,<br/>" +
+                  "Nor hater that did 'gainst me boast,<br/>" +
                   "from him me hide I would.<br/>" +
                   "",
               "<b>13</b> But thou, man, who mine equal, guide,<br/>" +
@@ -4104,7 +4107,7 @@ public class Constants {
                   "Because they never changes have,<br/>" +
                   "therefore they fear not God.<br/>" +
                   "",
-              "<b>20</b> ÔGainst those that were at peace with him<br/>" +
+              "<b>20</b> 'Gainst those that were at peace with him<br/>" +
                   "he hath put forth his hand:<br/>" +
                   "The covenant that he had made,<br/>" +
                   "by breaking he profan'd.<br/>" +
@@ -4147,7 +4150,7 @@ public class Constants {
                   "my trust is in the Lord.<br/>" +
                   "",
               "<b>5</b> Each day they wrest my words; their thoughts<br/>" +
-                  "Ôgainst me are all for ill.<br/>" +
+                  "'gainst me are all for ill.<br/>" +
                   "",
               "<b>6</b> They meet, they lurk, they mark my steps,<br/>" +
                   "waiting my soul to kill.<br/>" +
@@ -4221,8 +4224,8 @@ public class Constants {
               "<b>8</b> My glory wake; wake psalt'ry, harp;<br/>" +
                   "myself I'll early raise.<br/>" +
                   "",
-              "<b>9</b> I'll praise thee Ômong the people, Lord;<br/>" +
-                  "Ômong nations sing will I:<br/>" +
+              "<b>9</b> I'll praise thee 'mong the people, Lord;<br/>" +
+                  "'mong nations sing will I:<br/>" +
                   "",
               "<b>10</b> For great to heav'n thy mercy is,<br/>" +
                   "thy truth is to the sky.<br/>" +
@@ -4893,7 +4896,7 @@ public class Constants {
                   "whose feathers cover'd are.<br/>" +
                   "",
               "<b>14</b> When there th' Almighty scatter'd kings,<br/>" +
-                  "like Salmon's snow Ôtwas white.<br/>" +
+                  "like Salmon's snow 'twas white.<br/>" +
                   "",
               "<b>15</b> God's hill is like to Bashan hill,<br/>" +
                   "like Bashan hill for height.<br/>" +
@@ -5696,7 +5699,7 @@ public class Constants {
                   "",
               "<b>8</b> For in the hand of God most high<br/>" +
                   "of red wine is a cup:<br/>" +
-                  "ÔTis full of mixture, he pours forth,<br/>" +
+                  "'Tis full of mixture, he pours forth,<br/>" +
                   "and makes the wicked all<br/>" +
                   "Wring out the bitter dregs thereof;<br/>" +
                   "yea, and they drink them shall.<br/>" +
@@ -5947,7 +5950,7 @@ public class Constants {
                   "",
               "<b>21</b> The Lord did hear, and waxed wroth;<br/>" +
                   "so kindled was a flame<br/>" +
-                  "ÔGainst Jacob, and Ôgainst Israel<br/>" +
+                  "'Gainst Jacob, and 'gainst Israel<br/>" +
                   "up indignation came.<br/>" +
                   "",
               "<b>22</b> For they believ'd not God, nor trust<br/>" +
@@ -6595,7 +6598,7 @@ public class Constants {
                   "from thy wrath's furiousness.<br/>" +
                   "",
               "<b>4</b> Turn us, God of our health, and cause<br/>" +
-                  "thy wrath Ôgainst us to cease.<br/>" +
+                  "thy wrath 'gainst us to cease.<br/>" +
                   "",
               "<b>5</b> Shall thy displeasure thus endure<br/>" +
                   "against us without end?<br/>" +
@@ -7372,7 +7375,7 @@ public class Constants {
                   "",
               "<b>16</b> Who will rise up for me against<br/>" +
                   "those that do wickedly?<br/>" +
-                  "Who will stand up for me Ôgainst those<br/>" +
+                  "Who will stand up for me 'gainst those<br/>" +
                   "that work iniquity?<br/>" +
                   "",
               "<b>17</b> Unless the Lord had been my help<br/>" +
@@ -7634,7 +7637,7 @@ public class Constants {
                   "Before his footstool worship him:<br/>" +
                   "the Holy One is he.<br/>" +
                   "",
-              "<b>6</b> Moses and Aaron Ômong his priests,<br/>" +
+              "<b>6</b> Moses and Aaron 'mong his priests,<br/>" +
                   "Samuel, with them that call<br/>" +
                   "Upon his name: these call'd on God,<br/>" +
                   "and he them answer'd all.<br/>" +
@@ -8173,7 +8176,7 @@ public class Constants {
                   "From him the sun his certain time<br/>" +
                   "of going down doth learn.<br/>" +
                   "",
-              "<b>20</b> Thou darkness mak'st, Ôtis night, then beasts<br/>" +
+              "<b>20</b> Thou darkness mak'st, 'tis night, then beasts<br/>" +
                   "of forests creep abroad.<br/>" +
                   "",
               "<b>21</b> The lions young roar for their prey,<br/>" +
@@ -8538,7 +8541,7 @@ public class Constants {
               "<b>26</b> Therefore in desert them to slay<br/>" +
                   "he lifted up his hand:<br/>" +
                   "",
-              "<b>27</b> ÔMong nations to o'erthrow their seed,<br/>" +
+              "<b>27</b> 'Mong nations to o'erthrow their seed,<br/>" +
                   "and scatter in each land.<br/>" +
                   "",
               "<b>28</b> They unto Baalpeor did<br/>" +
@@ -8811,8 +8814,8 @@ public class Constants {
               "<b>2</b> Awake up psaltery and harp;<br/>" +
                   "myself I'll early raise.<br/>" +
                   "",
-              "<b>3</b> I'll praise thee Ômong the people, Lord;<br/>" +
-                  "Ômong nations sing will I:<br/>" +
+              "<b>3</b> I'll praise thee 'mong the people, Lord;<br/>" +
+                  "'mong nations sing will I:<br/>" +
                   "",
               "<b>4</b> For above heav'n thy mercy's great,<br/>" +
                   "thy truth doth reach the sky.<br/>" +
@@ -9152,7 +9155,7 @@ public class Constants {
                   "God's name is to be prais'd.<br/>" +
                   "",
               "<b>4</b> Above all nations God is high,<br/>" +
-                  "Ôbove heav'ns his glory rais'd.<br/>" +
+                  "'bove heav'ns his glory rais'd.<br/>" +
                   "",
               "<b>5</b> Unto the Lord our God that dwells<br/>" +
                   "on high, who can compare?<br/>" +
@@ -9980,7 +9983,7 @@ public class Constants {
               "<b>125</b> I am thy servant, wisdom give,<br/>" +
                   "that I thy laws may know.<br/>" +
                   "",
-              "<b>126</b> ÔTis time thou work, Lord; for they have<br/>" +
+              "<b>126</b> 'Tis time thou work, Lord; for they have<br/>" +
                   "made void thy law divine.<br/>" +
                   "",
               "<b>127</b> Therefore thy precepts more I love<br/>" +
@@ -10307,7 +10310,7 @@ public class Constants {
                   "when men rose us to slay;<br/>" +
                   "",
               "<b>3</b> They had us swallow'd quick, when as<br/>" +
-                  "their wrath Ôgainst us did flame:<br/>" +
+                  "their wrath 'gainst us did flame:<br/>" +
                   "",
               "<b>4</b> Waters had cover'd us, our soul<br/>" +
                   "had sunk beneath the stream.<br/>" +
@@ -10410,7 +10413,7 @@ public class Constants {
                   "",
               "<b>2</b> Then fill'd with laughter was our mouth,<br/>" +
                   "our tongue with melody:<br/>" +
-                  "They Ômong the heathen said, The Lord<br/>" +
+                  "They 'mong the heathen said, The Lord<br/>" +
                   "great things for them hath wrought.<br/>" +
                   "",
               "<b>3</b> The Lord hath done great things for us,<br/>" +
@@ -10434,7 +10437,7 @@ public class Constants {
                   "Except the Lord the city keep,<br/>" +
                   "the watchmen watch in vain.<br/>" +
                   "",
-              "<b>2</b> ÔTis vain for you to rise betimes,<br/>" +
+              "<b>2</b> 'Tis vain for you to rise betimes,<br/>" +
                   "or late from rest to keep,<br/>" +
                   "To feed on sorrows' bread; so gives<br/>" +
                   "he his beloved sleep.<br/>" +
@@ -10827,7 +10830,7 @@ public class Constants {
               "<b>2</b> Give thanks with heart and mind<br/>" +
                   "To God of gods alway:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10837,7 +10840,7 @@ public class Constants {
               "<b>4</b> Great wonders only he<br/>" +
                   "Doth work by his great pow'r:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10846,7 +10849,7 @@ public class Constants {
                   "The heav'n and firmament<br/>" +
                   "Did frame, as we may see:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10855,7 +10858,7 @@ public class Constants {
                   "Above the waters' reach<br/>" +
                   "Making it to abide:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10865,7 +10868,7 @@ public class Constants {
               "<b>8</b> Such as the sun we see,<br/>" +
                   "To rule the lightsome day:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10874,7 +10877,7 @@ public class Constants {
                   "The stars that do appear,<br/>" +
                   "To guide the darksome night:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10883,7 +10886,7 @@ public class Constants {
                   "And in his anger hot<br/>" +
                   "Did kill all their firstborn:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10893,7 +10896,7 @@ public class Constants {
               "<b>12</b> With a strong hand he wrought,<br/>" +
                   "And stretch'd-out arm deliver:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10903,7 +10906,7 @@ public class Constants {
               "<b>14</b> And through its midst to go<br/>" +
                   "Made his own Israel:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10912,7 +10915,7 @@ public class Constants {
                   "With all his mighty host,<br/>" +
                   "And chariots there also:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10921,7 +10924,7 @@ public class Constants {
                   "Ev'n through the desert dry,<br/>" +
                   "And in that place them fed:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10931,7 +10934,7 @@ public class Constants {
               "<b>18</b> Who slew, and spared not<br/>" +
                   "Kings famous and renown'd:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10941,7 +10944,7 @@ public class Constants {
               "<b>20</b> Og also, who did reign<br/>" +
                   "The land of Bashan over:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10951,7 +10954,7 @@ public class Constants {
               "<b>22</b> That Isr'el might it have<br/>" +
                   "In heritage for ever:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10961,7 +10964,7 @@ public class Constants {
               "<b>24</b> And us delivered<br/>" +
                   "From foes which did us hate:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   "",
@@ -10971,7 +10974,7 @@ public class Constants {
               "<b>26</b> Give thanks to God most good,<br/>" +
                   "The God of heav'n, for ever:<br/>" +
                   "For certainly<br/>" +
-                  "His mercies Ôdure<br/>" +
+                  "His mercies 'dure<br/>" +
                   "Most firm and sure<br/>" +
                   "Eternally.<br/>" +
                   ""},
@@ -11048,7 +11051,7 @@ public class Constants {
                   "",
               "<b>7</b> Though I in midst of trouble walk,<br/>" +
                   "I life from thee shall have:<br/>" +
-                  "ÔGainst my foes' wrath thou'lt stretch thine hand;<br/>" +
+                  "'Gainst my foes' wrath thou'lt stretch thine hand;<br/>" +
                   "thy right hand shall me save.<br/>" +
                   "",
               "<b>8</b> Surely that which concerneth me<br/>" +
