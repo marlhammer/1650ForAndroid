@@ -30,7 +30,7 @@ public class ViewPsalms extends Activity {
 
     System.setProperty("log.tag.1650ForAndroid", "INFO");
 
-    int restoredSelectedPsalm = 150;
+    int restoredSelectedPsalm = 1;
 
     if (savedInstanceState == null) {
       Log.i("1650ForAndroid", "No saved instance state.");
