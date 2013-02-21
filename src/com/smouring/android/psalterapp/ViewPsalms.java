@@ -19,92 +19,67 @@ import static com.smouring.android.psalterapp.Constants.*;
  */
 public class ViewPsalms extends Activity {
 
-  public static final int[] BOOK_RANGES = {41, 72, 89, 106, 150};
+  private int selectedPsalm;
 
-  public static final String[] BOOK_NAMES = {
-      "Book 1 (1 - 41)",
-      "Book 2 (42 - 72)",
-      "Book 3 (73 - 89)",
-      "Book 4 (90 - 106)",
-      "Book 5 (107 - 150)"
-  };
-
-  public static final String[][] PSALM_NAMES = new String[BOOK_NAMES.length][];
-
-  static {
-    for (int i = 0; i < BOOK_RANGES.length; ++i) {
-      int prevBookRange = (i == 0) ? 0 : BOOK_RANGES[i - 1];
-
-      int bookRange = BOOK_RANGES[i];
-      int bookRangeLength = bookRange - prevBookRange;
-
-      PSALM_NAMES[i] = new String[bookRangeLength];
-
-      for (int j = 0; j < bookRangeLength; ++j) {
-        PSALM_NAMES[i][j] = "Psalm " + (j + 1 + prevBookRange);
-      }
-    }
-  }
-
-  private int selectedBook = 1;
-  private int selectedPsalm = 1;
+  private boolean restore;
 
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     setContentView(R.layout.viewpsalms);
 
-    selectedBook = 1;
-    selectedPsalm = 1;
+    System.setProperty("log.tag.1650ForAndroid", "INFO");
+
+    int restoredSelectedPsalm = 150;
+
     if (savedInstanceState == null) {
       Log.i("1650ForAndroid", "No saved instance state.");
     } else {
       Log.i("1650ForAndroid", "Restoring saved instance state.");
-      if (savedInstanceState.containsKey(SELECTED_BOOK_KEY) && savedInstanceState.containsKey(SELECTED_PSALM_KEY)) {
-        selectedBook = savedInstanceState.getInt(SELECTED_BOOK_KEY);
-        Log.i("1650ForAndroid", SELECTED_BOOK_KEY + " - " + selectedBook);
-        selectedPsalm = savedInstanceState.getInt(SELECTED_PSALM_KEY);
-        Log.i("1650ForAndroid", SELECTED_PSALM_KEY + " - " + selectedPsalm);
+      if (savedInstanceState.containsKey(SELECTED_PSALM_KEY)) {
+        restoredSelectedPsalm = savedInstanceState.getInt(SELECTED_PSALM_KEY);
+        Log.i("1650ForAndroid", "Found key: " + SELECTED_PSALM_KEY + " - " + restoredSelectedPsalm);
       } else {
-        Log.e("1650ForAndroid", "No valid keys stored in saved instance state!");
+        Log.e("1650ForAndroid", "No valid key stored in saved instance state!");
       }
     }
 
-    System.setProperty("log.tag.1650ForAndroid", "INFO");
+    restore = true;
+
+    final int bookIndex = getBookForPsalm(restoredSelectedPsalm) - 1;
+    Log.i("1650ForAndroid", "bookIndex - " + bookIndex);
+    final int psalmIndex = (bookIndex == 0 ? (restoredSelectedPsalm - 1) : (restoredSelectedPsalm - 1) - BOOKS[bookIndex -1]);
+    Log.i("1650ForAndroid", "psalmIndex - " + psalmIndex);
 
     Spinner chooseBook = (Spinner) findViewById(R.id.choosebook);
     ArrayAdapter<String> bookNameAdapter = new ArrayAdapter<String>(this, R.layout.psalmselector, BOOK_NAMES);
     bookNameAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
     chooseBook.setAdapter(bookNameAdapter);
+    chooseBook.setSelection(bookIndex);
     chooseBook.setOnItemSelectedListener(new OnItemSelectedListenerAdapter() {
       public void onItemSelected(AdapterView parent, View view, int pos, long id) {
         Log.i("1650ForAndroid", "chooseBook onItemSelectedListener fired.");
 
-        selectedBook = Integer.parseInt(parent.getItemAtPosition(pos).toString().split(" ")[1]);
-        Log.i("1650ForAndroid", "selectedBook set to: [" + selectedBook + "]");
+        int bookIndex = Integer.parseInt(parent.getItemAtPosition(pos).toString().split(" ")[1]) - 1;
 
         Spinner choosePsalm = (Spinner) findViewById(R.id.choosepsalm);
-        ArrayAdapter<String> psalmNameAdapter = new ArrayAdapter<String>(ViewPsalms.this, R.layout.psalmselector, PSALM_NAMES[selectedBook - 1]);
+
+        ArrayAdapter<String> psalmNameAdapter = new ArrayAdapter<String>(ViewPsalms.this, R.layout.psalmselector, PSALM_NAMES[bookIndex]);
         psalmNameAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         choosePsalm.setAdapter(psalmNameAdapter);
-
-        if (selectedBook == 1) {
-          choosePsalm.setSelection((selectedPsalm-1));
-        } else {
-          choosePsalm.setSelection((selectedPsalm-1)-BOOK_RANGES[(selectedBook-1)-1]);
+        if (restore) {
+          choosePsalm.setSelection(psalmIndex);
+          restore = false;
         }
       }
     });
-    chooseBook.setSelection(selectedBook-1);
 
     Spinner choosePsalm = (Spinner) findViewById(R.id.choosepsalm);
-    ArrayAdapter<String> psalmAdapter = new ArrayAdapter<String>(this, R.layout.psalmselector, new String[]{""});
-    psalmAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-    choosePsalm.setAdapter(psalmAdapter);
     choosePsalm.setOnItemSelectedListener(new OnItemSelectedListenerAdapter() {
       public void onItemSelected(AdapterView parent, View view, int pos, long id) {
         Log.i("1650ForAndroid", "choosePsalm onItemSelectedListener fired.");
         selectedPsalm = Integer.parseInt(parent.getItemAtPosition(pos).toString().replace("Psalm ", ""));
+        Log.i("1650ForAndroid", "selectedPsalm set to: [" + selectedPsalm + "]");
       }
     });
 
@@ -114,7 +89,6 @@ public class ViewPsalms extends Activity {
         Log.i("1650ForAndroid", "Launching intent for ViewPsalm activity.");
 
         Intent i = new Intent(ViewPsalms.this, ViewPsalm.class);
-        i.putExtra(SELECTED_BOOK_KEY,  selectedBook);
         i.putExtra(SELECTED_PSALM_KEY, selectedPsalm);
         startActivity(i);
       }
@@ -123,8 +97,17 @@ public class ViewPsalms extends Activity {
 
   public void onSaveInstanceState(Bundle savedInstanceState) {
     Log.i("1650ForAndroid", "onSaveInstanceState listener fired.");
-    savedInstanceState.putInt(SELECTED_BOOK_KEY, selectedBook);
     savedInstanceState.putInt(SELECTED_PSALM_KEY, selectedPsalm);
+  }
+
+  private int getBookForPsalm(int selectedPsalm) {
+    for (int i = 0; i < BOOKS.length; ++i) {
+      if (selectedPsalm <= BOOKS[i]) {
+        return i+1;
+      }
+    }
+    Log.e("1650ForAndroid", "Invalid selectedPsalm parameter!");
+    throw new RuntimeException("Invalid selectedPsalm parameter!");
   }
 
   public class OnItemSelectedListenerAdapter implements OnItemSelectedListener {

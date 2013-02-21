@@ -16,7 +16,7 @@ import static com.smouring.android.psalterapp.Constants.*;
  * @author Stephen Mouring
  */
 public class ViewPsalm extends Activity {
-  private int selectedBook = 0;
+
   private int selectedPsalm = 0;
 
   public void onCreate(Bundle savedInstanceState) {
@@ -24,10 +24,9 @@ public class ViewPsalm extends Activity {
 
     setContentView(R.layout.viewpsalm);
 
-    selectedBook = getIntent().getIntExtra(SELECTED_BOOK_KEY, 1);
     selectedPsalm = getIntent().getIntExtra(SELECTED_PSALM_KEY, 1);
 
-    Log.i("1650ForAndroid", String.format("Received selectedBook [%s] and selectedPsalm [%s].", String.valueOf(selectedBook), String.valueOf(selectedPsalm)));
+    Log.i("1650ForAndroid", String.format("Received selectedPsalm [%s].", String.valueOf(selectedPsalm)));
 
     TextView psalmText = (TextView) findViewById(R.id.psalmtext);
 

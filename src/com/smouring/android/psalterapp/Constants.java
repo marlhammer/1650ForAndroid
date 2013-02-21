@@ -5,8 +5,34 @@ package com.smouring.android.psalterapp;
  */
 public class Constants {
 
-  public static String SELECTED_BOOK_KEY = "selectedBook";
   public static String SELECTED_PSALM_KEY = "selectedPsalm";
+
+  public static final int[] BOOKS = {41, 72, 89, 106, 150};
+
+  public static final String[] BOOK_NAMES = {
+      "Book 1 (1 - 41)",
+      "Book 2 (42 - 72)",
+      "Book 3 (73 - 89)",
+      "Book 4 (90 - 106)",
+      "Book 5 (107 - 150)"
+  };
+
+  public static final String[][] PSALM_NAMES = new String[BOOK_NAMES.length][];
+
+  static {
+    for (int i = 0; i < BOOKS.length; ++i) {
+      int prevBookRange = (i == 0) ? 0 : BOOKS[i - 1];
+
+      int bookRange = BOOKS[i];
+      int bookRangeLength = bookRange - prevBookRange;
+
+      PSALM_NAMES[i] = new String[bookRangeLength];
+
+      for (int j = 0; j < bookRangeLength; ++j) {
+        PSALM_NAMES[i][j] = "Psalm " + (j + 1 + prevBookRange);
+      }
+    }
+  }
 
   public static final String[][] PSALMS = new String[][]
       {
